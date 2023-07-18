@@ -1,38 +1,149 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  height: 3rem;
+  background-color: #fff;
   display: flex;
-  flex-direction: column;
+  padding: 0.5rem;
+  border-bottom: 1px solid #bdbcbc;
+}
+.collapsable {
+  width: 14.5rem;
+  display: flex;
+  /* justify-content: center; */
   align-items: center;
+  padding-right: 1.8rem;
+}
+
+.icon-container {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 2px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 50%;
+  transition-duration: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-container:hover {
+  background-color: #dddcdc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  width: 100%;
+  height: 100%;
+  color: #000;
+  transition-duration: 1s;
+}
+
+.logo {
+  width: 6.1rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 2.75rem;
+  width: 2.75rem;
+  display: flex;
+}
+
+.keep-text {
+  font-size: 1.25rem;
+  padding-left: 0.5rem;
+  color: #5f6368;
+}
+
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  height: 100%;
+  width: 45rem;
+  flex-grow: 1;
+}
+
+.searchbar-container:focus {
+  background-color: #fff;
+}
+
+.input-container {
+  display: flex;
+  background-color: rgba(161, 161, 161, 0.2);
+  width: 50%;
+  align-items: center;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+.searchbar-icon {
+  width: 2.5rem;
+  padding: 0 0.4rem;
+}
+
+.searchbar-input {
+  background: transparent;
+  padding: 0.6rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.8rem;
+  padding-left: 2px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.searchbar-input:focus {
+  border: none;
+  outline: none;
+}
+
+.tools {
+  width: 9rem;
+  height: 3rem;
+  display: flex;
+}
+
+.tools-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tools-icons .icon {
+  color: #878686;
+}
+.profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 1.8rem;
+  padding-right: 1rem;
+}
+
+.profile-pic {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  padding: 0 3px;
+}
+
+.main-page {
+  display: flex;
+}
+
+.sidebar {
+  flex-grow: 1;
+}
+
+.content {
+  flex-grow: 5;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 85%;
 }

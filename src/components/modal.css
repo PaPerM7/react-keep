@@ -1,0 +1,75 @@
+.whole-page {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-card {
+  width: 37rem;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.modal-header {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+.note-content {
+  flex-grow: 14;
+  width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+  font-size: 1.2rem;
+}
+
+.modal-footer {
+  flex-grow: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-footer .icon-container {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin-inline: 0.2rem;
+}
+
+.close-btn {
+  color: #ffb700;
+  border: 0.5px solid #ffb700;
+}
+
+.close-btn:hover {
+  border: 0.5px solid #ffb700;
+}

@@ -1,0 +1,67 @@
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 30rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.card {
+  height: 20rem;
+  width: 14rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  transition-duration: 0.4s;
+  position: relative;
+}
+
+.card:hover {
+  cursor: pointer;
+  transition-duration: 0.4s;
+  box-shadow: 10px 10px 19px -12px rgba(0, 0, 0, 0.75);
+}
+
+.card:hover .card-icons {
+  display: flex;
+  justify-content: center;
+  opacity: 1;
+}
+
+.card-title {
+  flex-grow: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  align-self: flex-start;
+  flex-wrap: wrap;
+  word-break: break-all;
+}
+
+.card-note {
+  flex-grow: 4;
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-all;
+}
+
+.card-icons {
+  transition-duration: 0.4s;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+}
+
+.icon-container {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.edge-icon {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
